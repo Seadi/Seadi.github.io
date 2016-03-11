@@ -416,3 +416,12 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+nav {
+  border-top: 1px solid #bdc3c7;
+  border-bottom: 1px solid #bdc3c7
+}
+
+nav a {
+  margin-right: 1rem;
+}
