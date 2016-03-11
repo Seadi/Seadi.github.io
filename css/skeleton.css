@@ -425,23 +425,23 @@ nav {
 
 nav a {
   margin-right: 2rem;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 footer {
-  text-align:center;
+  text-align: center;
   border-top: 1px solid #bdc3c7;
-  padding:1rem;
+  padding: 1rem;
 }
 
 header {
-  margin-top:2rem;
-  margin-bottom:1rem;
-  max-height:25rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  max-height: 250px;
 }
 
 .logo {
-  font-size:3.6rem;
-  color:#c0392b;
-  margin-bottom:0
+  font-size: 3.6rem;
+  color: #c0392b;
+  margin-bottom: 0
 }
