@@ -437,6 +437,7 @@ footer {
 }
 
 header {
+  background-image: url("http://www.patternpictures.com/wp-content/uploads/2013/11/PP39542607-Grey-Fading-to-Blue-Sky-Clouds.jpg");
   padding-top: 2rem;
   text-align: center;
 }
@@ -445,4 +446,9 @@ header {
   font-size: 3.6rem;
   color: #c0392b;
   margin-bottom: 0
+}
+
+article {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
