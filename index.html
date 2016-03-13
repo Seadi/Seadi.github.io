@@ -1,41 +1,14 @@
+---
+layout: default
+---
 
-<body>
+{% for post in site.posts %}
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    
-    <header class="row">
-          <a href="#">Lorem ipsum</a>
-        <p>
-          Lorem ipsum dolor sit amet
-        </p>
-    </header>
-    
-    <nav class="row">
-      <a href="http://fb.com">Kreu</a>  
-      <a href="http://fb.com">Artikuj</a> 
-      <a href="http://fb.com">Kontakt</a> 
-      <a href="http://fb.com">Info</a>
-    </nav>
-    
-    <div class="row">
       <article>
-        <h1>Titulli i artikullit</h1>
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          {{ post.excerpt }}
           </p>
       </article>
-      
-    </div>
-    
-    <footer class="row">
-      <p>Copyright kot pa lidhje</p>
-    </footer>
-    
-  </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+{% endfor %}
