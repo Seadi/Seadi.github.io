@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  
+  {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+    
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
+    
+  <meta name="author" content="{{ site.name }}">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+
+</head>
